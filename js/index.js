@@ -1,33 +1,25 @@
-window.addEventListener("scroll", () => {
-    var header = document.querySelector("header");
-    header.classList.toggle("abajo", window.scrollY > 0);
-  });
-  
-  // ! cambiar de login a registro
-  
-  irRegister.addEventListener("click", () => {
-    buttomUser()
-  });
-  irLogin.addEventListener("click", () => {
-    buttomUser()
-  })
+// ! header cambiando de color
 
-//       !    carrito desplegable
+window.addEventListener("scroll", () => {
+  var header = document.querySelector("header");
+  header.classList.toggle("abajo", window.scrollY > 0);
+});
+
+// !     cambiar de login a registro
+
+irRegister.addEventListener("click", () => {
+  buttomUser()
+});
+irLogin.addEventListener("click", () => {
+  buttomUser()
+})
+
+// !           carrito desplegable
 
 popUpCart.addEventListener("click", () => {
-    pullOutCart()
-  })
-  
-  trolleyX.addEventListener("click", () => {
-    pullOutCart()
-  })
+  pullOutCart()
+})
 
-  // ! click de cambio login a register
-function buttomUser() {
-    document.getElementById("formAdd").classList.toggle("formNone");
-    document.getElementById("formLogin").classList.toggle("formNone");
-}
-
-function pullOutCart (){
-    document.getElementById("modal").classList.toggle("see");
-}
+trolleyX.addEventListener("click", () => {
+  pullOutCart()
+})
