@@ -23,3 +23,9 @@ popUpCart.addEventListener("click", () => {
 trolleyX.addEventListener("click", () => {
   pullOutCart()
 })
+
+
+
+
+
+
